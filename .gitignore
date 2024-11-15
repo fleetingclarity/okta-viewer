@@ -11,6 +11,8 @@
 
 .idea/
 
+okta-viewer
+
 # AWS User-specific
 .idea/**/aws.xml
 
