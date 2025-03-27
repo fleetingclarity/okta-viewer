@@ -33,7 +33,8 @@ var userCmd = &cobra.Command{
 	LastUpdated: %s
 	Login: %s
 	Status: %s
-	StatusChanged: %s`,
+	StatusChanged: %s
+`,
 			args[0], user.Id, user.Created, user.Activated, user.LastLogin,
 			user.LastUpdated, user.PasswordChanged, (*user.Profile)["login"], user.Status, user.StatusChanged)
 	},
