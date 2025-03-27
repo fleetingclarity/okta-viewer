@@ -68,7 +68,7 @@ var groupUsersCmd = &cobra.Command{
 		}
 
 		fmt.Printf("Users in group %q:\n", groupName)
-		for _, user := range users {
+		for _, user := range allUsers {
 			email, ok := (*user.Profile)["email"]
 			if !ok {
 				fmt.Println("- Email field is missing or not a string for userId=%q", user.Id)
